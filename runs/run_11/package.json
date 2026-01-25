@@ -1,0 +1,12 @@
+{
+  "name": "axios-example",
+  "version": "1.0.0",
+  "description": "Example project using Axios",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

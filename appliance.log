@@ -1,0 +1,180 @@
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+[API] Appliance Health API running at http://127.0.0.1:3000/health
+[DAEMON] Found 1 due schedules.
+[DAEMON] Executing schedule 1 for project 2
+[2026-01-24T14:13:03.171Z] [INFO] Starting cycle with objective: Daily Scheduled Business Cycle
+[2026-01-24T14:13:03.183Z] [INFO] Starting Task 69: [CEO] Analyze and Delegate
+[2026-01-24T14:16:03.180Z] [INFO] Delegated task to ops
+[2026-01-24T14:16:03.194Z] [INFO] Delegated task to product
+[2026-01-24T14:16:03.205Z] [INFO] Delegated task to growth
+[2026-01-24T14:16:03.216Z] [INFO] Delegated task to engineering
+[2026-01-24T14:16:03.226Z] [INFO] Delegated task to finance_risk
+[2026-01-24T14:16:03.242Z] [INFO] Task 69 Completed
+[2026-01-24T14:16:03.251Z] [INFO] Starting Task 70: [ops] Daily Operations Review
+[2026-01-24T14:18:28.805Z] [WARN] Retrying Task 70 due to invalid JSON (Attempt 2)
+[Error: SQLITE_CONSTRAINT: NOT NULL constraint failed: tasks.dept] {
+  errno: 19,
+  code: 'SQLITE_CONSTRAINT'
+}
+[2026-01-24T14:19:03.844Z] [ERROR] Task 70 Failed: SQLITE_CONSTRAINT: NOT NULL constraint failed: tasks.dept
+[2026-01-24T14:19:03.860Z] [INFO] Starting Task 71: [product] Product Development Update
+[2026-01-24T14:20:59.645Z] [INFO] Generated artifact: OFFER.md
+[2026-01-24T14:20:59.647Z] [INFO] Generated artifact: LANDING_PAGE_COPY.md
+[2026-01-24T14:20:59.683Z] [INFO] Task 71 Completed
+[2026-01-24T14:20:59.689Z] [INFO] Starting Task 72: [growth] Customer Acquisition Campaigns
+[2026-01-24T14:22:28.525Z] [INFO] Generated artifact: OUTREACH_LIST.csv
+[2026-01-24T14:22:28.526Z] [INFO] Generated artifact: blog_post_1.md
+[2026-01-24T14:22:28.562Z] [INFO] Task 72 Completed
+[2026-01-24T14:22:28.572Z] [INFO] Starting Task 73: [engineering] Technical Infrastructure Maintenance
+[2026-01-24T14:23:11.227Z] [INFO] Generated artifact: src/index.html
+[2026-01-24T14:23:11.228Z] [INFO] Generated artifact: src/main.ts
+[2026-01-24T14:23:11.262Z] [WARN] Action requires REVIEW: Command tsc --init. Pausing run. Approval ID: 5
+[2026-01-24T14:23:11.263Z] [INFO] Run 21 PAUSED requiring approval.
+[2026-01-24T14:23:11.285Z] [INFO] Generated artifact: RUN_REPORT.md
+[2026-01-24T14:23:11.292Z] [INFO] Cycle Paused. Pending Approval.
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3000
+}
+
+Node.js v24.11.0
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3000
+}
+
+Node.js v24.11.0
+[DAEMON] Found 1 due schedules.
+[DAEMON] Executing schedule 2 for project 1
+[2026-01-24T20:41:16.840Z] [INFO] Starting cycle with objective: Daily Scheduled Business Cycle
+[2026-01-24T20:41:16.891Z] [INFO] Starting Task 87: [CEO] Analyze and Delegate
+[2026-01-24T20:43:42.421Z] [INFO] Delegated task to ops
+[2026-01-24T20:43:42.431Z] [INFO] Delegated task to growth
+[2026-01-24T20:43:42.444Z] [INFO] Delegated task to product
+[2026-01-24T20:43:42.455Z] [INFO] Delegated task to finance_risk
+[2026-01-24T20:43:42.469Z] [INFO] Task 87 Completed
+[2026-01-24T20:43:42.475Z] [INFO] Starting Task 93: [ops] Daily Performance Review
+LLM Generation Failed: This operation was aborted
+[2026-01-24T20:48:42.516Z] [WARN] Retrying Task 93 due to invalid JSON (Attempt 2)
+[2026-01-24T20:52:10.092Z] [INFO] Task 93 Completed
+[2026-01-24T20:52:10.103Z] [INFO] Starting Task 94: [growth] Customer Engagement Check-in
+[2026-01-24T20:54:57.364Z] [INFO] Generated artifact: OUTREACH_LIST.csv
+[2026-01-24T20:54:57.365Z] [INFO] Generated artifact: blog_posts/seo-best-practices.md
+[2026-01-24T20:54:57.391Z] [INFO] Task 94 Completed
+[2026-01-24T20:54:57.397Z] [INFO] Starting Task 95: [product] Product Development Milestone Review
+LLM Generation Failed: This operation was aborted
+[2026-01-24T20:59:57.373Z] [WARN] Retrying Task 95 due to invalid JSON (Attempt 2)
+LLM Generation Failed: This operation was aborted
+[2026-01-24T21:04:57.344Z] [WARN] Retrying Task 95 due to invalid JSON (Attempt 3)
+LLM Generation Failed: This operation was aborted
+Error: Failed to parse JSON after 3 attempts: This operation was aborted
+    at CycleRunner.executeTask (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\business\cycle.js:260:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CycleRunner.processQueue (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\business\cycle.js:187:32)
+    at async CycleRunner.start (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\business\cycle.js:76:9)
+    at async Scheduler.runDue (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\business\scheduler.js:95:27)
+    at async Scheduler.daemon (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\business\scheduler.js:121:17)
+    at async Command.<anonymous> (C:\Users\User\Documents\AI\local-manus-agent-workspace\ai-company-os\dist\index.js:422:9)
+[2026-01-24T21:09:57.299Z] [ERROR] Task 95 Failed: Failed to parse JSON after 3 attempts: This operation was aborted
+[2026-01-24T21:09:57.340Z] [INFO] Starting Task 96: [finance_risk] Budget and Risk Assessment
+[2026-01-24T21:14:49.704Z] [INFO] Task 96 Completed
+[2026-01-24T21:14:49.713Z] [INFO] Generated artifact: RUN_REPORT.md
+[2026-01-24T21:14:49.725Z] [INFO] Cycle Completed.
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3000
+}
+
+Node.js v24.11.0
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at node:net:2206:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3000
+}
+
+Node.js v24.11.0
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+[API] Appliance Health API running at http://127.0.0.1:3000/health
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+[API] Appliance Health API running at http://127.0.0.1:3000/health
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+[API] Appliance Health API running at http://127.0.0.1:3000/health
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[DAEMON] Starting Company OS Scheduler Daemon...
+[DAEMON] Loop interval: 60s
+[API] Appliance Health API running at http://127.0.0.1:3000/health

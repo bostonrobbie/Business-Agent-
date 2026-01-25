@@ -1,0 +1,2 @@
+# Trading Strategy Automation Suite
+Enhance your trading performance with our comprehensive suite of tools designed to automate strategy development, execution, and monitoring. Our solution includes PineScript integration for TradingView strategies, Codex for seamless data ingestion into trading dashboards, and best practices from leading industry experts.

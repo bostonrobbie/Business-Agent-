@@ -1,0 +1,2 @@
+# Project Overview
+This repository contains the necessary files to conduct a comprehensive risk assessment before implementing an AI chatbot, including technical feasibility studies and legal compliance checks.
