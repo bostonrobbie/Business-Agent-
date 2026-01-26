@@ -1,5 +1,5 @@
 
-import { DB } from '../db';
+import { DB } from '../core/db';
 
 async function main() {
     await DB.getInstance().init();

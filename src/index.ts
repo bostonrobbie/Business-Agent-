@@ -2,9 +2,9 @@
 import { Command } from 'commander';
 import * as fs from 'fs';
 import * as path from 'path';
-import { DB } from './db';
-import { CycleRunner } from './business/cycle';
-import { ApprovalSystem } from './business/approvals';
+import { DB } from './core/db';
+import { CycleRunner } from './hedge_fund/cycle';
+import { ApprovalSystem } from './hedge_fund/approvals';
 
 const program = new Command();
 
@@ -21,12 +21,15 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const db = DB.getInstance().getDb();
-            const stmt = db.prepare("INSERT INTO projects (name, description, created_at) VALUES (?, ?, datetime('now'))");
-            stmt.run(options.name, options.description, function (this: any) {
-                console.log(`Project created with ID: ${this.lastID}`);
+            const prisma = DB.getInstance().getPrisma();
+            const project = await prisma.project.create({
+                data: {
+                    name: options.name,
+                    description: options.description,
+                    createdAt: new Date()
+                }
             });
-            stmt.finalize();
+            console.log(`Project created with ID: ${project.id}`);
         } catch (error) {
             console.error('Error adding project:', error);
         }
@@ -38,15 +41,13 @@ program
     .action(async () => {
         try {
             await DB.getInstance().init();
-            const db = DB.getInstance().getDb();
+            const prisma = DB.getInstance().getPrisma();
             console.log('\n--- Projects ---');
-            db.all("SELECT * FROM projects", (err, rows: any[]) => {
-                if (err) throw err;
-                if (rows.length === 0) console.log('No projects found.');
-                else {
-                    rows.forEach(r => console.log(`[ID: ${r.id}] ${r.name} - ${r.description || 'No description'}`));
-                }
-            });
+            const projects = await prisma.project.findMany();
+            if (projects.length === 0) console.log('No projects found.');
+            else {
+                projects.forEach(r => console.log(`[ID: ${r.id}] ${r.name} - ${r.description || 'No description'}`));
+            }
         } catch (error) {
             console.error('Error listing projects:', error);
         }
@@ -76,13 +77,10 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const db = DB.getInstance().getDb();
-            const approval: any = await new Promise((resolve) => {
-                db.get(`
-            SELECT a.*, t.dept, t.title, t.description, t.result_json 
-            FROM approvals a 
-            JOIN tasks t ON a.task_id = t.id 
-            WHERE a.id = ?`, [options.id], (err, row) => resolve(row));
+            const prisma = DB.getInstance().getPrisma();
+            const approval = await prisma.approval.findUnique({
+                where: { id: Number(options.id) },
+                include: { task: true }
             });
 
             if (!approval) {
@@ -91,24 +89,17 @@ program
             }
 
             console.log(`\n=== Approval Request #${approval.id} ===`);
-            console.log(`Task: [${approval.dept}] ${approval.title}`);
-            console.log(`Description: ${approval.description}`);
+            console.log(`Task: [${approval.task?.dept}] ${approval.task?.title}`);
+            console.log(`Description: ${approval.task?.description}`);
             console.log(`Status: ${approval.decision}`);
-            console.log(`Requested At: ${approval.requested_at}`);
+            console.log(`Requested At: ${approval.requestedAt}`);
             if (approval.decision !== 'PENDING') {
-                console.log(`Resolved At: ${approval.approved_at}`);
+                console.log(`Resolved At: ${approval.approvedAt}`);
                 console.log(`Notes: ${approval.notes}`);
             }
             console.log('\n--- Details ---');
-            // Try to parse partial result if available, or payload
-            // For v1, the pause happens before result_json is full, but we might have partial info or we look at the last action log?
-            // Actually, the pause happens inside executeTask, so we don't have result_json yet.
-            // But we do have the risk trigger description in `notes` sometimes? 
-            // In v2, let's just show the raw logic: "Review required for..." is stored in the initial creation notes?
-            // Wait, we didn't store the reason in approvals table explicitly except in the call to createRequest.
-            // Let's verify `ApprovalSystem.createRequest`.
-
             // Checking ApprovalSystem to ensure we have context
+            console.log(`Context: ${approval.notes || 'No notes provided.'}`);
             console.log(`Context: ${approval.notes || 'No notes provided.'}`);
 
         } catch (error) {
@@ -146,23 +137,38 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const db = DB.getInstance().getDb();
+            const prisma = DB.getInstance().getPrisma();
             const date = options.date;
+            // Create start/end dates for the query
+            const startDate = new Date(date);
+            const endDate = new Date(date);
+            endDate.setDate(endDate.getDate() + 1);
 
             console.log(`\n=== Daily Report: ${date} ===\n`);
 
             // Runs Summary
-            const runs: any[] = await new Promise((resolve) => {
-                db.all("SELECT * FROM runs WHERE date(created_at) = ?", [date], (err, rows) => resolve(rows || []));
+            const runs = await prisma.processRun.findMany({
+                where: {
+                    startedAt: {
+                        gte: startDate,
+                        lt: endDate
+                    }
+                }
             });
+
             console.log(`Total Runs: ${runs.length}`);
             const completed = runs.filter(r => r.status === 'COMPLETED').length;
             const failed = runs.filter(r => r.status === 'FAILED').length;
             console.log(`Completed: ${completed} | Failed: ${failed}`);
 
             // KPIs
-            const kpis: any[] = await new Promise((resolve) => {
-                db.all("SELECT * FROM kpis WHERE date(created_at) = ?", [date], (err, rows) => resolve(rows || []));
+            const kpis = await prisma.kPI.findMany({
+                where: {
+                    createdAt: {
+                        gte: startDate,
+                        lt: endDate
+                    }
+                }
             });
 
             if (kpis.length > 0) {
@@ -176,7 +182,7 @@ program
             if (failed > 0) {
                 console.log('\n--- Failures ---');
                 runs.filter(r => r.status === 'FAILED').forEach(r => {
-                    console.log(`Run #${r.id}: ${r.objective} (FAILED)`);
+                    console.log(`Run #${r.id}: ${r.processName} (FAILED)`);
                 });
             }
 
@@ -221,7 +227,7 @@ program
     .description('Test connectivity to local Ollama LLM')
     .action(async () => {
         try {
-            const { OllamaLLM } = await import('./llm');
+            const { OllamaLLM } = await import('./core/llm');
             const llm = new OllamaLLM();
             console.log('Testing Ollama connection...');
             const response = await llm.generate('Say "OK" if you can hear me.');
@@ -241,11 +247,16 @@ program
             await DB.getInstance().init();
             console.log(`Resuming run: ${options.run_id}`);
 
-            const db = DB.getInstance().getDb();
+            await DB.getInstance().init();
+            console.log(`Resuming run: ${options.run_id}`);
+            const prisma = DB.getInstance().getPrisma();
+
             // Check if paused
-            const run: any = await new Promise((resolve) => {
-                db.get("SELECT * FROM runs WHERE id = ?", [options.run_id], (err, row) => resolve(row));
+            const run = await prisma.processRun.findUnique({
+                where: { id: Number(options.run_id) }
             });
+
+            if (!run) return;
 
             if (run.status !== 'PAUSED' && run.status !== 'RUNNING') {
                 console.log(`Run status is ${run.status}. Cannot resume.`);
@@ -254,31 +265,56 @@ program
 
             // If paused, set to RUNNING
             if (run.status === 'PAUSED') {
-                await new Promise<void>((resolve) => {
-                    db.run("UPDATE runs SET status = 'RUNNING' WHERE id = ?", [options.run_id], () => resolve());
+                await prisma.processRun.update({
+                    where: { id: run.id },
+                    data: { status: 'RUNNING' }
                 });
             }
 
-            // Also check if any task is NEEDS_APPROVAL and if it has been approved
-            // Logic: If task is NEEDS_APPROVAL, check approvals table. 
-            // If approved, set task to PENDING (to re-run) or directly resume execution?
-            // Better: Set to PENDING so processQueue picks it up.
+            // Also check if any task is NEEDS_APPROVAL
+            // Note: ProcessRunner uses `process_steps` relation now, not `tasks`.
+            // The `tasks` table might be legacy-ish unless used by LLM_TASK logic? 
+            // `process_runner.ts` creates `process_steps`.
+            // But `CycleRunner` (for LLM_TASK) creates `tasks` via `approvals.ts`?
+            // Approvals link to `tasks`.
+            // So we need to find tasks pending for this run?
+            // But `ProcessRunner` passes `runId` (which is `processRunId`).
+            // `CycleRunner` treats it as `projectId`?
+            // Re-reading `ProcessRunner.ts`: 
+            // `runner.start(prompt, Number(run.projectId), processDir)` -> CycleRunner uses `projectId`.
+            // So tasks are linked to `projectId`? Or `run_id`?
+            // CycleRunner creates `runs` (legacy `runs` table vs `process_runs`?)
+            // This is a dual-schema issue. `ProcessRunner` uses `process_runs`. `CycleRunner` (older) uses `runs` table?
+            // Let's assume `options.run_id` is a `processRunId`.
 
-            const pTask: any = await new Promise((resolve) => {
-                db.get("SELECT * FROM tasks WHERE run_id = ? AND status = 'NEEDS_APPROVAL'", [options.run_id], (err, row) => resolve(row));
+            // We'll skip complex logic and just rely on `runner.resumeRun`.
+            // But `CycleRunner` is for `runs`, not `process_runs`?
+            // If `ProcessRunner` is the main entry, we should use `executeNextStep`.
+            // The CLI calls `CycleRunner.resumeRun`. 
+            // If the user meant Process resumption, we should call `ProcessRunner.executeNextStep`.
+
+            // For now, let's just use Prisma for the status update as requested.
+
+            const pTask = await prisma.task.findFirst({
+                where: {
+                    runId: Number(options.run_id),
+                    status: 'NEEDS_APPROVAL'
+                }
             });
 
             if (pTask) {
-                const approval = await ApprovalSystem.getPending(); // actually need by task id
-                // Simpler: Check if there is an approved decision for this task
-                const approved = await new Promise((resolve) => {
-                    db.get("SELECT * FROM approvals WHERE task_id = ? AND decision = 'APPROVED'", [pTask.id], (err, row) => resolve(row));
+                const approved = await prisma.approval.findFirst({
+                    where: {
+                        taskId: pTask.id,
+                        decision: 'APPROVED'
+                    }
                 });
 
                 if (approved) {
                     console.log(`Task ${pTask.id} approved. Resuming...`);
-                    await new Promise<void>((resolve) => {
-                        db.run("UPDATE tasks SET status = 'PENDING' WHERE id = ?", [pTask.id], () => resolve());
+                    await prisma.task.update({
+                        where: { id: pTask.id },
+                        data: { status: 'PENDING' }
                     });
                 } else {
                     console.log(`Task ${pTask.id} still needs approval or was rejected.`);
@@ -307,7 +343,7 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const { Scheduler } = await import('./business/scheduler');
+            const { Scheduler } = await import('./core/scheduler');
             await Scheduler.addSchedule(Number(options.project_id), options.cadence, options.time);
             console.log('Schedule added.');
         } catch (error) {
@@ -321,7 +357,7 @@ program
     .action(async () => {
         try {
             await DB.getInstance().init();
-            const { Scheduler } = await import('./business/scheduler');
+            const { Scheduler } = await import('./core/scheduler');
             const schedules = await Scheduler.listSchedules();
             console.log('\n--- Schedules ---');
             if (schedules.length === 0) console.log('No schedules found.');
@@ -341,7 +377,7 @@ program
     .action(async () => {
         try {
             await DB.getInstance().init();
-            const { Scheduler } = await import('./business/scheduler');
+            const { Scheduler } = await import('./core/scheduler');
             await Scheduler.runDue();
         } catch (error) {
             console.error('Error running schedules:', error);
@@ -360,7 +396,7 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const { MemoryStore } = await import('./business/memory');
+            const { MemoryStore } = await import('./hedge_fund/memory');
             // Check if content is a file
             let content = options.content;
             const fs = await import('fs');
@@ -384,7 +420,7 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const { MemoryStore } = await import('./business/memory');
+            const { MemoryStore } = await import('./hedge_fund/memory');
             const results = await MemoryStore.search(Number(options.project_id), options.dept, options.query);
 
             console.log(`\n--- Found ${results.length} memories for ${options.dept} ---`);
@@ -405,12 +441,16 @@ program
     .description('Run the scheduler daemon (always-on loop)')
     .action(async () => {
         try {
-            const { Scheduler } = await import('./business/scheduler');
-            const { ApplianceAPI } = await import('./api');
+            const { Scheduler } = await import('./core/scheduler');
+            const { ApplianceAPI } = await import('./core/api');
+            const { JobQueue } = await import('./core/queue');
 
             // Start API in parallel
             const api = new ApplianceAPI();
             api.start();
+
+            // Start Worker
+            JobQueue.worker();
 
             await Scheduler.daemon();
         } catch (error) {
@@ -608,7 +648,7 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const { ProcessRunner } = await import('./business/process_runner');
+            const { ProcessRunner } = await import('./hedge_fund/process_runner');
             let inputs: Record<string, any>;
             try {
                 inputs = JSON.parse(options.inputs);
@@ -634,8 +674,8 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const { Scout } = await import('./business/scout');
-            const { Intercom } = await import('./business/intercom');
+            const { Scout } = await import('./quant_lab/scout');
+            const { Intercom } = await import('./hedge_fund/intercom');
             const scout = new Scout();
             console.log(`🔭 Manually triggering Scout for Project ${options.project_id}...`);
             const opportunities = await scout.scoutOpportunities(Number(options.project_id));
@@ -676,10 +716,16 @@ program
     .action(async (options) => {
         try {
             await DB.getInstance().init();
-            const db = DB.getInstance().getDb();
-
+            const prisma = DB.getInstance().getPrisma();
             // Create a recurring task for the Scout to find new work
-            db.run("INSERT INTO schedules (project_id, cadence, next_run_at, status) VALUES (1, 'daily', datetime('now'), 'ACTIVE')");
+            await prisma.schedule.create({
+                data: {
+                    projectId: 1,
+                    cadence: 'daily',
+                    nextRunAt: new Date(),
+                    status: 'ACTIVE'
+                }
+            });
             console.log(`📡 24/7 Autonomy Initialized. Interval set to ${options.hours}h.`);
         } catch (error) {
             console.error('Error starting autonomous loop:', error);

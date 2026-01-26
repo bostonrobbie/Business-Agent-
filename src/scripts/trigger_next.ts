@@ -1,6 +1,6 @@
 
-import { DB } from '../db';
-import { ProcessRunner } from '../business/process_runner';
+import { DB } from '../core/db';
+import { ProcessRunner } from '../hedge_fund/process_runner';
 
 async function main() {
     await DB.getInstance().init();
