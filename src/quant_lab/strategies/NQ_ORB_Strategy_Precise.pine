@@ -1,0 +1,72 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+//@version=5
+strategy("NQ 9:30 Short ORB [Precise Timing]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, commission_type=strategy.commission.cash_per_contract, commission_value=2.5)
+
+// --- Parameters ---
+profitRatio = input.float(3.5, "Profit Ratio (Reward/Risk)", step=0.1)
+useVwapFilter = input.bool(true, "Use Weekly VWAP Filter")
+
+// --- Timezone & Helper Functions ---
+// Force New York Time for all logic
+inSession(sess) => not na(time(timeframe.period, sess, "America/New_York"))
+timeIs(h, m) => 
+    t = time(timeframe.period, "0930-1600:1234567", "America/New_York")
+    hour(t, "America/New_York") == h and minute(t, "America/New_York") == m
+
+// --- Strategy State ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool rangeDefined = false
+
+// Reset daily
+if dayofmonth(time("1D", "America/New_York")) != dayofmonth(time("1D", "America/New_York")[1])
+    rangeDefined := false
+    rangeHigh := na
+    rangeLow := na
+
+// --- Logic on Bar Close ---
+
+// 1. At 9:30 Bar Close (New York: 09:35:00) -> Define Range & Setup Entry
+// This runs exactly when the 9:30 bar finishes.
+if timeIs(9, 30)
+    rangeHigh := high
+    rangeLow := low
+    rangeDefined := true
+    
+    // Check Filter immediately
+    vwapW = request.security(syminfo.tickerid, "W", ta.vwap)
+    bool trendOk = not useVwapFilter or (close < vwapW)
+    
+    if trendOk
+        // CALCULATE RISK & TARGET NOW
+        // Submit Stop Order for the *Next Bar* (9:35-9:40)
+        // This ensures if price drops at 09:35:01, we get filled.
+        
+        stopPrice = rangeHigh
+        entryPrice = rangeLow
+        risk = stopPrice - entryPrice
+        target = entryPrice - (risk * profitRatio)
+        
+        if risk > 0.25
+            strategy.entry("Short ORB", strategy.short, stop=entryPrice, comment="Breakout")
+            strategy.exit("Exit ORB", "Short ORB", stop=stopPrice, limit=target, comment_loss="Stop", comment_profit="Target")
+
+// 2. Continuous Entry Maintenance (9:35 Bar)
+// If we didn't fill in the first instant, keep the order active during the 9:35 bar.
+// Pine automatically cancels expired orders? No, assumes GTC for the session unless canceled.
+// But we want to strictly CANCEL if not filled by 9:45.
+
+// 3. At 9:40 Bar Close (New York: 09:45:00) -> HARD EXIT
+// This runs when the 9:40 bar finishes. Effectively 09:45:00.
+// We want to be OUT.
+if timeIs(9, 40)
+    strategy.close_all(comment="Time Exit 9:45")
+    // Also cancel any pending entry orders if not filled
+    strategy.cancel_all()
+
+// --- Visuals ---
+// Plot Range High/Low
+plot(timeIs(9, 30) or timeIs(9, 35) or timeIs(9, 40) ? rangeHigh : na, "Range High", color=color.red, style=plot.style_linebr)
+plot(timeIs(9, 30) or timeIs(9, 35) or timeIs(9, 40) ? rangeLow : na, "Range Low", color=color.green, style=plot.style_linebr)

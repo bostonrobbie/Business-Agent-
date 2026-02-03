@@ -1,0 +1,79 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+//@version=5
+strategy("NQ 9:30 Short ORB [Fixed Execution]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, commission_type=strategy.commission.cash_per_contract, commission_value=2.5)
+
+// --- Parameters ---
+profitRatio = input.float(3.5, "Profit Ratio (Reward/Risk)", step=0.1)
+useVwapFilter = input.bool(true, "Use Weekly VWAP Filter")
+
+// --- State Variables ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool tradeTaken = false
+
+// Reset daily
+if (dayofmonth != dayofmonth[1])
+    tradeTaken := false
+    rangeHigh := na
+    rangeLow := na
+
+// --- Time & Range Logic (New York Time) ---
+// We use the High/Low of the 9:30-9:35 candle.
+// In Pine Script 5m chart:
+// - The 9:30 bar represents 9:30:00 to 9:34:59.
+// - We trade starting from the 9:35 bar.
+
+isRangeBar = (hour == 9 and minute == 30)
+if isRangeBar
+    rangeHigh := high
+    rangeLow := low
+
+// Trade Window: 9:35 to 9:45
+// We stop entering new trades at 9:45.
+inWindow = (hour == 9 and minute >= 35 and minute < 45)
+
+// --- VWAP Filter ---
+vwapW = request.security(syminfo.tickerid, "W", ta.vwap)
+plot(useVwapFilter ? vwapW : na, "Weekly VWAP", color=color.blue)
+
+// --- Strategy Execution ---
+// Condition 1: We are in the window (9:35+)
+// Condition 2: We have a valid range from 9:30
+// Condition 3: Price is below VWAP (Trend Filter)
+// Condition 4: We haven't traded yet today
+
+canTrade = inWindow and not tradeTaken and not na(rangeLow) and (not useVwapFilter or close < vwapW)
+
+if (canTrade)
+    // CRITICAL FIX: Use a STOP order.
+    // We do NOT wait for 'close < rangeLow'. 
+    // We tell the broker: "If price hits rangeLow, sell immediately."
+    // This ensures we get the breakdown price, not the close of the bar.
+    
+    stopPrice = rangeHigh
+    entryPrice = rangeLow 
+    risk = stopPrice - entryPrice
+    limitTarget = entryPrice - (risk * profitRatio)
+    
+    // Check for bad data (Zero risk)
+    if (risk > 1.0)
+        strategy.entry("ORB Short", strategy.short, stop=entryPrice, comment="Breakout")
+        strategy.exit("Exit", "ORB Short", stop=stopPrice, limit=limitTarget, comment_loss="Stop", comment_profit="Target")
+
+// Mark trade as taken if we are in a position
+if (strategy.position_size != 0)
+    tradeTaken := true
+
+// --- Hard Time Exit (09:45) ---
+// If we are still open at 09:45:00 (start of bar), we close.
+// Actually, strict exit is 9:45. The bar logic:
+// 9:45 bar opens. If we are Short, we close immediately.
+if (hour == 9 and minute >= 45)
+    strategy.close_all(comment="Time Exit")
+
+// --- Visuals ---
+if (not na(rangeLow) and hour==9)
+    line.new(bar_index, rangeLow, bar_index+1, rangeLow, color=color.red, width=2)
+    line.new(bar_index, rangeHigh, bar_index+1, rangeHigh, color=color.green, width=2)

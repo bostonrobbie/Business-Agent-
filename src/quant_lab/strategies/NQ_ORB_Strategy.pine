@@ -1,0 +1,74 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+//@version=5
+strategy("NQ 9:30 Short ORB [Optimized]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, commission_type=strategy.commission.cash_per_contract, commission_value=2.5)
+
+// --- Parameters ---
+profitRatio = input.float(3.5, "Profit Ratio (Reward/Risk)", step=0.1)
+useVwapFilter = input.bool(true, "Use Weekly VWAP Filter")
+
+// --- Time Checks ---
+// We want the 09:30 candle (Exchange Time). 
+// Note: Adjust session/timezone if needed. Assuming Exchange Time (New York).
+t = time(timeframe.period, "0930-0935:1234567") // Check if within range definition time
+isRangeCandle = not na(t)
+
+// --- State Variables ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool tradeTaken = false
+
+// Reset daily
+if (dayofmonth != dayofmonth[1])
+    tradeTaken := false
+    rangeHigh := na
+    rangeLow := na
+
+// Define Range at 09:30
+if (hour == 9 and minute == 30) // Marks the 9:30-9:35 candle
+    rangeHigh := high
+    rangeLow := low
+
+// Define Window 09:35 - 09:45
+inWindow = (hour == 9 and minute >= 35 and minute < 45)
+
+// --- VWAP Filter ---
+// Get Weekly VWAP
+vwapW = request.security(syminfo.tickerid, "W", ta.vwap)
+// Plot VWAP for visual
+plot(useVwapFilter ? vwapW : na, "Weekly VWAP", color=color.blue)
+
+// --- Strategy Logic ---
+// 1. Entry Condition
+// Must be in window, not trade taken, valid breakdown, and below VWAP
+validTrend = not useVwapFilter or (close < vwapW)
+breakdown = low < rangeLow
+
+if (not tradeTaken and inWindow and not na(rangeLow) and breakdown and validTrend)
+    // Entry Price: We enter at the breakout (rangeLow) or Close if bar closed below?
+    // Using STOP order to simulate breakout during the bar if possible, 
+    // but simplified to MARKET on conditions for this script granularity.
+    // Ideally use strategy.entry with stop=rangeLow to catch exact breach.
+    
+    // Risk Calc
+    stopPrice = rangeHigh
+    entryPrice = rangeLow // Assuming fill at breakdown level
+    risk = stopPrice - entryPrice
+    target = entryPrice - (risk * profitRatio)
+    
+    if (risk > 0)
+        strategy.entry("Short ORB", strategy.short) // Enter Short
+        strategy.exit("Exit ORB", "Short ORB", stop=stopPrice, limit=target)
+        tradeTaken := true
+
+// 2. Hard Time Stop at 09:45
+if (hour == 9 and minute == 45)
+    strategy.close_all(comment="Time Exit 09:45")
+
+// --- Visuals ---
+// Plot Range High/Low during the session
+if (hour == 9 and minute >= 30 and minute <= 45)
+    line.new(bar_index, rangeHigh, bar_index+1, rangeHigh, color=color.red)
+    line.new(bar_index, rangeLow, bar_index+1, rangeLow, color=color.green)
+

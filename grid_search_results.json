@@ -1,0 +1,3458 @@
+[
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 514,
+    "winRate": 0.4961089494163424,
+    "profitFactor": 1.7525642548809948,
+    "netPnL": 190030,
+    "maxDrawdown": 0.08121759041012863,
+    "score": 21.302308515605926
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.48174603174603176,
+    "profitFactor": 1.7417370492711197,
+    "netPnL": 187500,
+    "maxDrawdown": 0.04639405204460967,
+    "score": 21.14735981944418
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 517,
+    "winRate": 0.4951644100580271,
+    "profitFactor": 1.7352007835455436,
+    "netPnL": 187660,
+    "maxDrawdown": 0.0816833359673086,
+    "score": 21.069479599351478
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.48253968253968255,
+    "profitFactor": 1.73626221466155,
+    "netPnL": 186105,
+    "maxDrawdown": 0.04639405204460967,
+    "score": 21.067920843460847
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 572,
+    "winRate": 0.479020979020979,
+    "profitFactor": 1.7261453867302405,
+    "netPnL": 188845,
+    "maxDrawdown": 0.08165199729180772,
+    "score": 20.97039113325325
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 576,
+    "winRate": 0.4774305555555556,
+    "profitFactor": 1.7087960146029815,
+    "netPnL": 186385,
+    "maxDrawdown": 0.08215631954221354,
+    "score": 20.7372131483659
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 522,
+    "winRate": 0.49233716475095785,
+    "profitFactor": 1.6613989836772405,
+    "netPnL": 171805,
+    "maxDrawdown": 0.07986159490966513,
+    "score": 20.026695060927864
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.4849206349206349,
+    "profitFactor": 1.655064358104758,
+    "netPnL": 165145,
+    "maxDrawdown": 0.04866579585743609,
+    "score": 19.88490173682643
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.47568093385214005,
+    "profitFactor": 1.667433586337761,
+    "netPnL": 140695,
+    "maxDrawdown": 0.08488076161749458,
+    "score": 19.766340843758027
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 582,
+    "winRate": 0.47594501718213056,
+    "profitFactor": 1.6372219106375023,
+    "netPnL": 170425,
+    "maxDrawdown": 0.08037675875286308,
+    "score": 19.72205797279732
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.47568093385214005,
+    "profitFactor": 1.639207779886148,
+    "netPnL": 134745,
+    "maxDrawdown": 0.07171295857427244,
+    "score": 19.36091156483733
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.47794117647058826,
+    "profitFactor": 1.7217445304289671,
+    "netPnL": 75545,
+    "maxDrawdown": 0.062795089707271,
+    "score": 19.339467518533553
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 533,
+    "winRate": 0.5028142589118199,
+    "profitFactor": 1.6073464097138828,
+    "netPnL": 159310,
+    "maxDrawdown": 0.07167761495704901,
+    "score": 19.253771386503693
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 596,
+    "winRate": 0.4848993288590604,
+    "profitFactor": 1.5784665458445835,
+    "netPnL": 156400,
+    "maxDrawdown": 0.07274732037540386,
+    "score": 18.87873155359037
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.47794117647058826,
+    "profitFactor": 1.6756472723798606,
+    "netPnL": 70720,
+    "maxDrawdown": 0.06310495350161321,
+    "score": 18.711087949474237
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 867,
+    "winRate": 0.43252595155709345,
+    "profitFactor": 1.5005195237006712,
+    "netPnL": 240855,
+    "maxDrawdown": 0.11819694596711042,
+    "score": 18.594363469393457
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 949,
+    "winRate": 0.4204425711275026,
+    "profitFactor": 1.4825082508250824,
+    "netPnL": 237575,
+    "maxDrawdown": 0.12416797180892718,
+    "score": 18.350840917564746
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.4742268041237113,
+    "profitFactor": 1.6435974747950626,
+    "netPnL": 68305,
+    "maxDrawdown": 0.07949561403508772,
+    "score": 18.29609687666457
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 874,
+    "winRate": 0.43135011441647597,
+    "profitFactor": 1.476969176331022,
+    "netPnL": 233195,
+    "maxDrawdown": 0.11579773407229388,
+    "score": 18.25479297272979
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.4742268041237113,
+    "profitFactor": 1.63299726750212,
+    "netPnL": 67180,
+    "maxDrawdown": 0.07949561403508772,
+    "score": 18.150978327479024
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.4776264591439689,
+    "profitFactor": 1.5481984979560794,
+    "netPnL": 115330,
+    "maxDrawdown": 0.07751107648863138,
+    "score": 18.04510943568486
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 957,
+    "winRate": 0.41901776384535006,
+    "profitFactor": 1.459038842132619,
+    "netPnL": 229625,
+    "maxDrawdown": 0.12398842513119819,
+    "score": 18.010671393216036
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.4214929214929215,
+    "profitFactor": 1.4695416775239585,
+    "netPnL": 162175,
+    "maxDrawdown": 0.3214,
+    "score": 17.629255744692415
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 887,
+    "winRate": 0.4317925591882751,
+    "profitFactor": 1.4330764399158533,
+    "netPnL": 217190,
+    "maxDrawdown": 0.12047539205049808,
+    "score": 17.610399707926245
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.4075816993464052,
+    "profitFactor": 1.4429846863359546,
+    "netPnL": 187305,
+    "maxDrawdown": 0.41507547735679295,
+    "score": 17.518546325142562
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 971,
+    "winRate": 0.4212152420185376,
+    "profitFactor": 1.4171762984637892,
+    "netPnL": 213855,
+    "maxDrawdown": 0.1435052766545024,
+    "score": 17.393080521838034
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.4797794117647059,
+    "profitFactor": 1.578834209268992,
+    "netPnL": 60575,
+    "maxDrawdown": 0.06111858543148184,
+    "score": 17.38555005719789
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 541,
+    "winRate": 0.5175600739371534,
+    "profitFactor": 1.4770419554623644,
+    "netPnL": 122855,
+    "maxDrawdown": 0.07246703616230907,
+    "score": 17.309100299965355
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 605,
+    "winRate": 0.5107438016528926,
+    "profitFactor": 1.4596746737280122,
+    "netPnL": 121515,
+    "maxDrawdown": 0.07414415535914354,
+    "score": 17.089568914114796
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.40967320261437906,
+    "profitFactor": 1.414908845694275,
+    "netPnL": 175355,
+    "maxDrawdown": 0.4400179946016195,
+    "score": 17.084412745087658
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 651,
+    "winRate": 0.45622119815668205,
+    "profitFactor": 1.4262442044515415,
+    "netPnL": 152150,
+    "maxDrawdown": 0.1527606098063453,
+    "score": 17.01883319294251
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.4231016731016731,
+    "profitFactor": 1.4273425054308473,
+    "netPnL": 147540,
+    "maxDrawdown": 0.3402,
+    "score": 16.98802297037262
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.4762886597938144,
+    "profitFactor": 1.547715880071881,
+    "netPnL": 57910,
+    "maxDrawdown": 0.07914673046251994,
+    "score": 16.973251175128855
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 655,
+    "winRate": 0.45648854961832064,
+    "profitFactor": 1.4203422343930274,
+    "netPnL": 151195,
+    "maxDrawdown": 0.15233692860811504,
+    "score": 16.93946405505264
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.4199346405228758,
+    "profitFactor": 1.4822685580204777,
+    "netPnL": 90435,
+    "maxDrawdown": 0.1737,
+    "score": 16.91622188783963
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 716,
+    "winRate": 0.4441340782122905,
+    "profitFactor": 1.4124107558060015,
+    "netPnL": 150765,
+    "maxDrawdown": 0.15385812475684088,
+    "score": 16.840848025980165
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 721,
+    "winRate": 0.44382801664355065,
+    "profitFactor": 1.4062529683959129,
+    "netPnL": 149690,
+    "maxDrawdown": 0.15352364191619866,
+    "score": 16.75736285848326
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 907,
+    "winRate": 0.44652701212789414,
+    "profitFactor": 1.3671025572905904,
+    "netPnL": 186545,
+    "maxDrawdown": 0.1568858743733412,
+    "score": 16.59174144870193
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.42419481539670073,
+    "profitFactor": 1.4744093241274467,
+    "netPnL": 74895,
+    "maxDrawdown": 0.15891492231603138,
+    "score": 16.548537904204284
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.49206349206349204,
+    "profitFactor": 1.4250288580185488,
+    "netPnL": 106780,
+    "maxDrawdown": 0.06264327095402826,
+    "score": 16.49973357224303
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 996,
+    "winRate": 0.4347389558232932,
+    "profitFactor": 1.3489369476791706,
+    "netPnL": 181435,
+    "maxDrawdown": 0.19089747370490515,
+    "score": 16.333809070061186
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1135,
+    "winRate": 0.3973568281938326,
+    "profitFactor": 1.3237345774855904,
+    "netPnL": 213715,
+    "maxDrawdown": 0.13544428080510554,
+    "score": 16.245398416146585
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.4210239651416122,
+    "profitFactor": 1.4319927458928952,
+    "netPnL": 80990,
+    "maxDrawdown": 0.1807,
+    "score": 16.18449796145017
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.4265514532600157,
+    "profitFactor": 1.441814033086138,
+    "netPnL": 69705,
+    "maxDrawdown": 0.17053294670532948,
+    "score": 16.079149502024027
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1248,
+    "winRate": 0.38621794871794873,
+    "profitFactor": 1.3081721448550414,
+    "netPnL": 208235,
+    "maxDrawdown": 0.17799576083205995,
+    "score": 16.020428826070326
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 662,
+    "winRate": 0.45468277945619334,
+    "profitFactor": 1.3528035785125097,
+    "netPnL": 128955,
+    "maxDrawdown": 0.15409133520824964,
+    "score": 15.918735681861884
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 729,
+    "winRate": 0.4430727023319616,
+    "profitFactor": 1.3401333279895262,
+    "netPnL": 127300,
+    "maxDrawdown": 0.15546967895362662,
+    "score": 15.752331568716187
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1145,
+    "winRate": 0.39650655021834064,
+    "profitFactor": 1.2913931953125581,
+    "netPnL": 195570,
+    "maxDrawdown": 0.13689243813467417,
+    "score": 15.733913246276572
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.4138562091503268,
+    "profitFactor": 1.3213089838276852,
+    "netPnL": 135300,
+    "maxDrawdown": 0.5008997300809757,
+    "score": 15.611595725616516
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 674,
+    "winRate": 0.4688427299703264,
+    "profitFactor": 1.3325308742723465,
+    "netPnL": 122245,
+    "maxDrawdown": 0.14318751741432154,
+    "score": 15.608976844695997
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1260,
+    "winRate": 0.38571428571428573,
+    "profitFactor": 1.2773980330923835,
+    "netPnL": 190535,
+    "maxDrawdown": 0.17937930010394496,
+    "score": 15.530083065208967
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 744,
+    "winRate": 0.4543010752688172,
+    "profitFactor": 1.3138055890817937,
+    "netPnL": 118300,
+    "maxDrawdown": 0.1464060852967152,
+    "score": 15.3465355617933
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.4263191763191763,
+    "profitFactor": 1.3105830781066292,
+    "netPnL": 106985,
+    "maxDrawdown": 0.40295,
+    "score": 15.177133834191254
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 920,
+    "winRate": 0.4782608695652174,
+    "profitFactor": 1.2781603017827083,
+    "netPnL": 137152.5,
+    "maxDrawdown": 0.11486653180046381,
+    "score": 15.119164855342706
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1169,
+    "winRate": 0.39863130881094955,
+    "profitFactor": 1.2509706565824228,
+    "netPnL": 173880,
+    "maxDrawdown": 0.21126343820889634,
+    "score": 15.094362915845712
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1013,
+    "winRate": 0.4768015794669299,
+    "profitFactor": 1.2692510391185887,
+    "netPnL": 135387.5,
+    "maxDrawdown": 0.12895347116001382,
+    "score": 14.997338677383269
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1287,
+    "winRate": 0.38927738927738925,
+    "profitFactor": 1.238558978158851,
+    "netPnL": 169025,
+    "maxDrawdown": 0.25229017083436495,
+    "score": 14.909527635354452
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.4208924949290061,
+    "profitFactor": 1.323101308210921,
+    "netPnL": 72365,
+    "maxDrawdown": 0.04481554441260745,
+    "score": 14.80481302772384
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.41109969167523125,
+    "profitFactor": 1.3164294781853412,
+    "netPnL": 71040,
+    "maxDrawdown": 0.08487692845374208,
+    "score": 14.705831565120214
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.48249027237354086,
+    "profitFactor": 1.3204373823760631,
+    "netPnL": 67255,
+    "maxDrawdown": 0.08176784654933755,
+    "score": 14.67830762063846
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.41212744090441933,
+    "profitFactor": 1.305091540825872,
+    "netPnL": 68490,
+    "maxDrawdown": 0.08118228568575565,
+    "score": 14.531467407900923
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.4304791830322074,
+    "profitFactor": 1.3312239641301238,
+    "netPnL": 52080,
+    "maxDrawdown": 0.2008,
+    "score": 14.457806155090472
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.4208924949290061,
+    "profitFactor": 1.298030986292807,
+    "netPnL": 66750,
+    "maxDrawdown": 0.05300004487726069,
+    "score": 14.419449247716358
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.42374727668845313,
+    "profitFactor": 1.3100998771564385,
+    "netPnL": 58060,
+    "maxDrawdown": 0.2109,
+    "score": 14.370789806952198
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.4824742268041237,
+    "profitFactor": 1.3577559633897662,
+    "netPnL": 37720,
+    "maxDrawdown": 0.0826854066985646,
+    "score": 14.307958665946538
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 661,
+    "winRate": 0.3903177004538578,
+    "profitFactor": 1.2570982886112403,
+    "netPnL": 85705,
+    "maxDrawdown": 0.13293600686903378,
+    "score": 14.278960150098548
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 551,
+    "winRate": 0.5716878402903811,
+    "profitFactor": 1.2569827799291422,
+    "netPnL": 62380,
+    "maxDrawdown": 0.10050204247092208,
+    "score": 13.878346860831202
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 861,
+    "winRate": 0.3681765389082462,
+    "profitFactor": 1.219612375038289,
+    "netPnL": 78865,
+    "maxDrawdown": 0.13769291132618364,
+    "score": 13.75173056441599
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 683,
+    "winRate": 0.4816983894582723,
+    "profitFactor": 1.2172523081163016,
+    "netPnL": 78830,
+    "maxDrawdown": 0.1242951886534688,
+    "score": 13.724579314756376
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 641,
+    "winRate": 0.37753510140405616,
+    "profitFactor": 1.2219037994539887,
+    "netPnL": 73560,
+    "maxDrawdown": 0.14372719467696932,
+    "score": 13.692478851862694
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 650,
+    "winRate": 0.38153846153846155,
+    "profitFactor": 1.2203799291759199,
+    "netPnL": 73435,
+    "maxDrawdown": 0.1418997668997669,
+    "score": 13.673327032762549
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.4834558823529412,
+    "profitFactor": 1.3129727142173289,
+    "netPnL": 32690,
+    "maxDrawdown": 0.05840158968642466,
+    "score": 13.648120937207866
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.4239350912778905,
+    "profitFactor": 1.2468812877263582,
+    "netPnL": 55215,
+    "maxDrawdown": 0.050893296180953944,
+    "score": 13.614684230177103
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 616,
+    "winRate": 0.560064935064935,
+    "profitFactor": 1.2362029577972826,
+    "netPnL": 58935,
+    "maxDrawdown": 0.10270873167622689,
+    "score": 13.578688687029299
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 755,
+    "winRate": 0.4768211920529801,
+    "profitFactor": 1.2064952219212055,
+    "netPnL": 76602.5,
+    "maxDrawdown": 0.14923339855844253,
+    "score": 13.568709757062308
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1209,
+    "winRate": 0.41273779983457404,
+    "profitFactor": 1.1592095683827353,
+    "netPnL": 114810,
+    "maxDrawdown": 0.2646884566011652,
+    "score": 13.505989940279546
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.4141829393627955,
+    "profitFactor": 1.2367751439667871,
+    "netPnL": 53040,
+    "maxDrawdown": 0.08537620450346997,
+    "score": 13.454631445772026
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 938,
+    "winRate": 0.5469083155650319,
+    "profitFactor": 1.1850862412982752,
+    "netPnL": 83485,
+    "maxDrawdown": 0.18391907560673304,
+    "score": 13.42989769377771
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.5015873015873016,
+    "profitFactor": 1.225299565904499,
+    "netPnL": 56312.5,
+    "maxDrawdown": 0.10336801433791867,
+    "score": 13.403149825695682
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1165,
+    "winRate": 0.35107296137339056,
+    "profitFactor": 1.1542322542322543,
+    "netPnL": 103860,
+    "maxDrawdown": 0.18710105892336643,
+    "score": 13.332304903458583
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 681,
+    "winRate": 0.4111600587371512,
+    "profitFactor": 1.1993032325692528,
+    "netPnL": 64645,
+    "maxDrawdown": 0.13147142023258945,
+    "score": 13.284281389887273
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1333,
+    "winRate": 0.4028507126781695,
+    "profitFactor": 1.14575524451825,
+    "netPnL": 107520,
+    "maxDrawdown": 0.3301274106390362,
+    "score": 13.27406965246893
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.37964841108857333,
+    "profitFactor": 1.1910934095671601,
+    "netPnL": 68850,
+    "maxDrawdown": 0.3633,
+    "score": 13.268405988651994
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 849,
+    "winRate": 0.35571260306242636,
+    "profitFactor": 1.1897692296979234,
+    "netPnL": 68130,
+    "maxDrawdown": 0.14600310702897168,
+    "score": 13.241147496686098
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1031,
+    "winRate": 0.5412221144519883,
+    "profitFactor": 1.171341086028861,
+    "netPnL": 78900,
+    "maxDrawdown": 0.19091890097119615,
+    "score": 13.207967713907376
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1146,
+    "winRate": 0.33507853403141363,
+    "profitFactor": 1.1441367838426661,
+    "netPnL": 97915,
+    "maxDrawdown": 0.1859933903576983,
+    "score": 13.148254059388433
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 832,
+    "winRate": 0.3485576923076923,
+    "profitFactor": 1.1835003855050115,
+    "netPnL": 65450,
+    "maxDrawdown": 0.1502664796633941,
+    "score": 13.123885211259752
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 952,
+    "winRate": 0.36659663865546216,
+    "profitFactor": 1.1497216469381164,
+    "netPnL": 78800,
+    "maxDrawdown": 0.2503080163745479,
+    "score": 12.962730178786563
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 922,
+    "winRate": 0.351409978308026,
+    "profitFactor": 1.1421308618807804,
+    "netPnL": 74225,
+    "maxDrawdown": 0.2542768571319224,
+    "score": 12.808833491367752
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1511,
+    "winRate": 0.3355393778954335,
+    "profitFactor": 1.1236618857864848,
+    "netPnL": 89065,
+    "maxDrawdown": 0.32728174603174603,
+    "score": 12.80651128356425
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1486,
+    "winRate": 0.31695827725437414,
+    "profitFactor": 1.11860777360829,
+    "netPnL": 86130,
+    "maxDrawdown": 0.2945881888208572,
+    "score": 12.71142590718741
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1130,
+    "winRate": 0.3292035398230089,
+    "profitFactor": 1.122423309705965,
+    "netPnL": 82730,
+    "maxDrawdown": 0.24619289340101522,
+    "score": 12.70957803468893
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1632,
+    "winRate": 0.3131127450980392,
+    "profitFactor": 1.1012402257912093,
+    "netPnL": 99630,
+    "maxDrawdown": 0.49928652265905626,
+    "score": 12.674414493090946
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.3803245436105477,
+    "profitFactor": 1.1576660976252933,
+    "netPnL": 56800,
+    "maxDrawdown": 0.3786,
+    "score": 12.673308351589883
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 892,
+    "winRate": 0.39125560538116594,
+    "profitFactor": 1.1567382464150675,
+    "netPnL": 54925,
+    "maxDrawdown": 0.16413343861034346,
+    "score": 12.624321842766435
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 933,
+    "winRate": 0.35476956055734193,
+    "profitFactor": 1.1302867280947748,
+    "netPnL": 68295,
+    "maxDrawdown": 0.2756086728307829,
+    "score": 12.581890515292875
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1218,
+    "winRate": 0.3505747126436782,
+    "profitFactor": 1.1227485406176196,
+    "netPnL": 68865,
+    "maxDrawdown": 0.27088172043010755,
+    "score": 12.507310223614658
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1671,
+    "winRate": 0.3177737881508079,
+    "profitFactor": 1.0908340173618885,
+    "netPnL": 91295,
+    "maxDrawdown": 0.60825,
+    "score": 12.459343939911792
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1733,
+    "winRate": 0.3306405077899596,
+    "profitFactor": 1.0836143447790516,
+    "netPnL": 85545,
+    "maxDrawdown": 0.4602,
+    "score": 12.306389041791219
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1176,
+    "winRate": 0.32908163265306123,
+    "profitFactor": 1.1131634743234988,
+    "netPnL": 62980,
+    "maxDrawdown": 0.2773417932876941,
+    "score": 12.301093671413872
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1205,
+    "winRate": 0.3933609958506224,
+    "profitFactor": 1.1031830805383465,
+    "netPnL": 67620,
+    "maxDrawdown": 0.29013777756735004,
+    "score": 12.269226120447836
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1455,
+    "winRate": 0.3106529209621993,
+    "profitFactor": 1.0978335518511582,
+    "netPnL": 70515,
+    "maxDrawdown": 0.29591836734693877,
+    "score": 12.255753486527414
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 381,
+    "winRate": 0.3438320209973753,
+    "profitFactor": 1.1578618002705048,
+    "netPnL": 39100,
+    "maxDrawdown": 0.30483437779767236,
+    "score": 12.243089122793053
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1240,
+    "winRate": 0.44516129032258067,
+    "profitFactor": 1.0943036955623848,
+    "netPnL": 67355,
+    "maxDrawdown": 0.24134430320847697,
+    "score": 12.166175671436308
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1197,
+    "winRate": 0.33500417710944025,
+    "profitFactor": 1.105305035045058,
+    "netPnL": 58895,
+    "maxDrawdown": 0.2972608108696599,
+    "score": 12.140130537332233
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2149,
+    "winRate": 0.29455560725919033,
+    "profitFactor": 1.0743585615108493,
+    "netPnL": 78510,
+    "maxDrawdown": 0.6999651585286945,
+    "score": 12.109075239300545
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 409,
+    "winRate": 0.33496332518337407,
+    "profitFactor": 1.1455703738985472,
+    "netPnL": 36675,
+    "maxDrawdown": 0.32895653038893863,
+    "score": 12.039773484909393
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1369,
+    "winRate": 0.44558071585098613,
+    "profitFactor": 1.0877963215960347,
+    "netPnL": 63942.5,
+    "maxDrawdown": 0.26047548291233286,
+    "score": 12.037270746689039
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 385,
+    "winRate": 0.34285714285714286,
+    "profitFactor": 1.1440558886975796,
+    "netPnL": 36395,
+    "maxDrawdown": 0.3260220829603104,
+    "score": 12.015088517231266
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2211,
+    "winRate": 0.3007688828584351,
+    "profitFactor": 1.0657524727247458,
+    "netPnL": 70965,
+    "maxDrawdown": 0.8082963553871466,
+    "score": 11.904393388470758
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 390,
+    "winRate": 0.34615384615384615,
+    "profitFactor": 1.1363917326637047,
+    "netPnL": 35305,
+    "maxDrawdown": 0.34693979266347685,
+    "score": 11.900044077304244
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 686,
+    "winRate": 0.4518950437317784,
+    "profitFactor": 1.1234263104542035,
+    "netPnL": 37745,
+    "maxDrawdown": 0.12632622935695176,
+    "score": 11.839349834818453
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 413,
+    "winRate": 0.3341404358353511,
+    "profitFactor": 1.1314519268197742,
+    "netPnL": 33770,
+    "maxDrawdown": 0.3521336914353924,
+    "score": 11.798020485465363
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.429281045751634,
+    "profitFactor": 1.103558170902016,
+    "netPnL": 43380,
+    "maxDrawdown": 0.671230823047324,
+    "score": 11.783522435633426
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 418,
+    "winRate": 0.3397129186602871,
+    "profitFactor": 1.1255871446229913,
+    "netPnL": 33020,
+    "maxDrawdown": 0.36971690590111644,
+    "score": 11.71158646987878
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2291,
+    "winRate": 0.3186381492797905,
+    "profitFactor": 1.0576409826658044,
+    "netPnL": 63280,
+    "maxDrawdown": 0.6819789746400279,
+    "score": 11.692564376215708
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.4927835051546392,
+    "profitFactor": 1.1800390457597256,
+    "netPnL": 18905,
+    "maxDrawdown": 0.08033579115185333,
+    "score": 11.62005891595481
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1562,
+    "winRate": 0.37772087067861715,
+    "profitFactor": 1.0709627240552575,
+    "netPnL": 49725,
+    "maxDrawdown": 0.4290052773075774,
+    "score": 11.581672672212562
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.4912451361867704,
+    "profitFactor": 1.1294939920532339,
+    "netPnL": 27050,
+    "maxDrawdown": 0.14304952865479575,
+    "score": 11.526985746334224
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 979,
+    "winRate": 0.3881511746680286,
+    "profitFactor": 1.0709865449069802,
+    "netPnL": 36535,
+    "maxDrawdown": 0.2826608070315621,
+    "score": 11.25181246954843
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 696,
+    "winRate": 0.5488505747126436,
+    "profitFactor": 1.0885473078235581,
+    "netPnL": 29840,
+    "maxDrawdown": 0.16604030208668885,
+    "score": 11.215961542754737
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 901,
+    "winRate": 0.4428412874583796,
+    "profitFactor": 1.0895259497707188,
+    "netPnL": 29480,
+    "maxDrawdown": 0.17447619991084254,
+    "score": 11.212820735015413
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 525,
+    "winRate": 0.31047619047619046,
+    "profitFactor": 1.0810795332522014,
+    "netPnL": 28315,
+    "maxDrawdown": 0.44062530821580037,
+    "score": 11.082305190868285
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.3830290736984449,
+    "profitFactor": 1.0787490265880522,
+    "netPnL": 28315,
+    "maxDrawdown": 0.42635,
+    "score": 11.058414824519605
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.4430479183032207,
+    "profitFactor": 1.121196641231123,
+    "netPnL": 18980,
+    "maxDrawdown": 0.28535,
+    "score": 11.04506628240415
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1219,
+    "winRate": 0.44298605414273995,
+    "profitFactor": 1.055784335225842,
+    "netPnL": 34340,
+    "maxDrawdown": 0.23053674765128973,
+    "score": 11.02668142081657
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.4411196911196911,
+    "profitFactor": 1.0761478326818739,
+    "netPnL": 26105,
+    "maxDrawdown": 0.5477,
+    "score": 10.944296629880808
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 519,
+    "winRate": 0.28516377649325625,
+    "profitFactor": 1.0735887096774193,
+    "netPnL": 26280,
+    "maxDrawdown": 0.5201933034173283,
+    "score": 10.925443647497431
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 770,
+    "winRate": 0.5402597402597402,
+    "profitFactor": 1.07487204767221,
+    "netPnL": 25820,
+    "maxDrawdown": 0.17096001474110928,
+    "score": 10.919522658731074
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 400,
+    "winRate": 0.5125,
+    "profitFactor": 1.097397125602734,
+    "netPnL": 20805,
+    "maxDrawdown": 0.35202430157860665,
+    "score": 10.911363237158728
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.4224049331963001,
+    "profitFactor": 1.0935477368927908,
+    "netPnL": 20885,
+    "maxDrawdown": 0.12177869886466029,
+    "score": 10.877285841204014
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 395,
+    "winRate": 0.369620253164557,
+    "profitFactor": 1.08427895751017,
+    "netPnL": 21650,
+    "maxDrawdown": 0.34253214638971313,
+    "score": 10.82409740111763
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.34046164290563474,
+    "profitFactor": 1.0666104665944094,
+    "netPnL": 24890,
+    "maxDrawdown": 0.5814674130347861,
+    "score": 10.79646728547859
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 430,
+    "winRate": 0.5116279069767442,
+    "profitFactor": 1.0892428439519852,
+    "netPnL": 19330,
+    "maxDrawdown": 0.3687267311988086,
+    "score": 10.750188107524037
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 579,
+    "winRate": 0.32124352331606215,
+    "profitFactor": 1.060658441644125,
+    "netPnL": 22985,
+    "maxDrawdown": 0.52195,
+    "score": 10.651765398885981
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 424,
+    "winRate": 0.3632075471698113,
+    "profitFactor": 1.0741251508360627,
+    "netPnL": 19350,
+    "maxDrawdown": 0.3652818991097923,
+    "score": 10.602096122925591
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 677,
+    "winRate": 0.30132939438700146,
+    "profitFactor": 1.05644628433501,
+    "netPnL": 20930,
+    "maxDrawdown": 0.5067,
+    "score": 10.510519444647992
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 692,
+    "winRate": 0.5375722543352601,
+    "profitFactor": 1.0697124551902981,
+    "netPnL": 18280,
+    "maxDrawdown": 0.15480586884918654,
+    "score": 10.497690405097945
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1260,
+    "winRate": 0.3746031746031746,
+    "profitFactor": 1.0420991349118993,
+    "netPnL": 23140,
+    "maxDrawdown": 0.4159217322208979,
+    "score": 10.472385595033723
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 669,
+    "winRate": 0.2750373692077728,
+    "profitFactor": 1.0536008759778894,
+    "netPnL": 20315,
+    "maxDrawdown": 0.57315,
+    "score": 10.450788051078492
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.49080882352941174,
+    "profitFactor": 1.1087741252346344,
+    "netPnL": 11300,
+    "maxDrawdown": 0.08837450081348913,
+    "score": 10.347698837863208
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 636,
+    "winRate": 0.3128930817610063,
+    "profitFactor": 1.0489030075285064,
+    "netPnL": 18935,
+    "maxDrawdown": 0.56245,
+    "score": 10.33040168372685
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1811,
+    "winRate": 0.3699613473219216,
+    "profitFactor": 1.0204145324125906,
+    "netPnL": 20605,
+    "maxDrawdown": 0.83765,
+    "score": 10.13607249492065
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.3428377460964019,
+    "profitFactor": 1.0430679018956839,
+    "netPnL": 16085,
+    "maxDrawdown": 0.6184026389444223,
+    "score": 10.10278273806164
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1582,
+    "winRate": 0.4336283185840708,
+    "profitFactor": 1.0279522493509659,
+    "netPnL": 18357.5,
+    "maxDrawdown": 0.3548781705612143,
+    "score": 10.092222901015688
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 396,
+    "winRate": 0.42424242424242425,
+    "profitFactor": 1.0476870942718328,
+    "netPnL": 11680,
+    "maxDrawdown": 0.33401040376517216,
+    "score": 9.812253092394728
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 583,
+    "winRate": 0.32075471698113206,
+    "profitFactor": 1.034176901936778,
+    "netPnL": 13120,
+    "maxDrawdown": 0.5748,
+    "score": 9.805954791870093
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.4400871459694989,
+    "profitFactor": 1.0552050049673765,
+    "netPnL": 10280,
+    "maxDrawdown": 0.28545,
+    "score": 9.74793692042856
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 426,
+    "winRate": 0.4272300469483568,
+    "profitFactor": 1.0446473564330492,
+    "netPnL": 11075,
+    "maxDrawdown": 0.34283741120757694,
+    "score": 9.728221672652811
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.42697768762677485,
+    "profitFactor": 1.0477320025958332,
+    "netPnL": 10665,
+    "maxDrawdown": 0.14683567727609179,
+    "score": 9.717423715599462
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 588,
+    "winRate": 0.32482993197278914,
+    "profitFactor": 1.030719306346519,
+    "netPnL": 11975,
+    "maxDrawdown": 0.6195,
+    "score": 9.679048416165505
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 866,
+    "winRate": 0.27251732101616627,
+    "profitFactor": 1.0193084627253026,
+    "netPnL": 10825,
+    "maxDrawdown": 0.7217,
+    "score": 9.46898170988876
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1272,
+    "winRate": 0.514937106918239,
+    "profitFactor": 1.0161455839091469,
+    "netPnL": 10620,
+    "maxDrawdown": 0.48340569945600637,
+    "score": 9.420171838311825
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 641,
+    "winRate": 0.31357254290171604,
+    "profitFactor": 1.0239828639186037,
+    "netPnL": 9405,
+    "maxDrawdown": 0.61195,
+    "score": 9.368415885583913
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 515,
+    "winRate": 0.2757281553398058,
+    "profitFactor": 1.0229157390917185,
+    "netPnL": 8235,
+    "maxDrawdown": 0.5967828944142023,
+    "score": 9.222760352517984
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 647,
+    "winRate": 0.31839258114374036,
+    "profitFactor": 1.0203217824891044,
+    "netPnL": 8090,
+    "maxDrawdown": 0.65835,
+    "score": 9.181247212658262
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 908,
+    "winRate": 0.5231277533039648,
+    "profitFactor": 1.0264109666378505,
+    "netPnL": 7485,
+    "maxDrawdown": 0.26185741274734015,
+    "score": 9.156259452697663
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 659,
+    "winRate": 0.26858877086494687,
+    "profitFactor": 1.0118242798895174,
+    "netPnL": 4495,
+    "maxDrawdown": 0.6263,
+    "score": 8.510171665454562
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1403,
+    "winRate": 0.5110477548111191,
+    "profitFactor": 1.0058396335332018,
+    "netPnL": 3920,
+    "maxDrawdown": 0.54945,
+    "score": 8.322163166781776
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 534,
+    "winRate": 0.3707865168539326,
+    "profitFactor": 1.0100390240996158,
+    "netPnL": 3370,
+    "maxDrawdown": 0.573331463825014,
+    "score": 8.20421168338596
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 879,
+    "winRate": 0.2935153583617747,
+    "profitFactor": 1.003277773275342,
+    "netPnL": 1820,
+    "maxDrawdown": 0.5269,
+    "score": 7.531196685996459
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1232,
+    "winRate": 0.5324675324675324,
+    "profitFactor": 1.0024716883605094,
+    "netPnL": 1315,
+    "maxDrawdown": 0.3146,
+    "score": 7.19934260183129
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.4124116260801257,
+    "profitFactor": 0.6905867454622203,
+    "netPnL": -47645,
+    "maxDrawdown": 0.5324,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 485,
+    "winRate": 0.511340206185567,
+    "profitFactor": 0.8988991888760139,
+    "netPnL": -10470,
+    "maxDrawdown": 0.16610304356475034,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.3380855397148676,
+    "profitFactor": 0.5064287768208021,
+    "netPnL": -180230,
+    "maxDrawdown": 1.8497450764770569,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.45323741007194246,
+    "profitFactor": 0.7173407505357713,
+    "netPnL": -61990,
+    "maxDrawdown": 0.6687593423019432,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.40032679738562094,
+    "profitFactor": 0.5993173129437466,
+    "netPnL": -73365,
+    "maxDrawdown": 0.8002,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 544,
+    "winRate": 0.5091911764705882,
+    "profitFactor": 0.826879937579245,
+    "netPnL": -17750,
+    "maxDrawdown": 0.2474159884156389,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.3654496281271129,
+    "profitFactor": 0.5096045197740113,
+    "netPnL": -173600,
+    "maxDrawdown": 1.7707,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.4482758620689655,
+    "profitFactor": 0.6605272089602896,
+    "netPnL": -75015,
+    "maxDrawdown": 0.78485,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.40508365508365507,
+    "profitFactor": 0.6316507705771541,
+    "netPnL": -124165,
+    "maxDrawdown": 1.3562,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1028,
+    "winRate": 0.5097276264591439,
+    "profitFactor": 0.8477606870784609,
+    "netPnL": -31375,
+    "maxDrawdown": 0.4340054767239233,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.40183006535947713,
+    "profitFactor": 0.6534842211348155,
+    "netPnL": -142690,
+    "maxDrawdown": 1.57905,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1260,
+    "winRate": 0.5246031746031746,
+    "profitFactor": 0.9116393309516077,
+    "netPnL": -21765,
+    "maxDrawdown": 0.37292338209769405,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1273,
+    "winRate": 0.4344069128043991,
+    "profitFactor": 0.9491917601311181,
+    "netPnL": -7905,
+    "maxDrawdown": 0.34895,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.3587915818058384,
+    "profitFactor": 0.7018957860857993,
+    "netPnL": -109757.5,
+    "maxDrawdown": 1.227671321857746,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 973,
+    "winRate": 0.4316546762589928,
+    "profitFactor": 0.9452059419311276,
+    "netPnL": -12172.5,
+    "maxDrawdown": 0.26849301713422213,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1836,
+    "winRate": 0.434640522875817,
+    "profitFactor": 0.8587677469031569,
+    "netPnL": -26137.5,
+    "maxDrawdown": 0.468575,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.39486139283299526,
+    "profitFactor": 0.7232104030187833,
+    "netPnL": -98657.5,
+    "maxDrawdown": 1.0953,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 986,
+    "winRate": 0.4340770791075051,
+    "profitFactor": 0.887413278250522,
+    "netPnL": -25072.5,
+    "maxDrawdown": 0.37723525526553975,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3108,
+    "winRate": 0.4343629343629344,
+    "profitFactor": 0.8908051460065609,
+    "netPnL": -37197.5,
+    "maxDrawdown": 0.806575,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 3825,
+    "winRate": 0.4250980392156863,
+    "profitFactor": 0.9239885991918414,
+    "netPnL": -31602.5,
+    "maxDrawdown": 0.9133639862062072,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.3621860149355058,
+    "profitFactor": 0.8326297759855422,
+    "netPnL": -62050,
+    "maxDrawdown": 0.8443622550979608,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 2,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2958,
+    "winRate": 0.39553752535496955,
+    "profitFactor": 0.8785134116727608,
+    "netPnL": -43525,
+    "maxDrawdown": 0.6542518622206669,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 35,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2946,
+    "winRate": 0.3469110658520027,
+    "profitFactor": 0.9732839287392431,
+    "netPnL": -9950,
+    "maxDrawdown": 0.6945721711315473,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 694,
+    "winRate": 0.5259365994236311,
+    "profitFactor": 0.9235446518267858,
+    "netPnL": -21690,
+    "maxDrawdown": 0.44905,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 541,
+    "winRate": 0.5268022181146026,
+    "profitFactor": 0.9396971887103649,
+    "netPnL": -16270,
+    "maxDrawdown": 0.39485,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1244,
+    "winRate": 0.5016077170418006,
+    "profitFactor": 0.9075468550136255,
+    "netPnL": -41560,
+    "maxDrawdown": 0.7246022642262231,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 902,
+    "winRate": 0.5077605321507761,
+    "profitFactor": 0.9393833931378784,
+    "netPnL": -25255,
+    "maxDrawdown": 0.56085,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1283,
+    "winRate": 0.49337490257209665,
+    "profitFactor": 0.8643139870068408,
+    "netPnL": -63075,
+    "maxDrawdown": 0.6869756292449061,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 994,
+    "winRate": 0.5030181086519114,
+    "profitFactor": 0.8914141414141414,
+    "netPnL": -47300,
+    "maxDrawdown": 0.5295556665002497,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1600,
+    "winRate": 0.524375,
+    "profitFactor": 0.9740780920629041,
+    "netPnL": -14695,
+    "maxDrawdown": 0.4731755915317559,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2483,
+    "winRate": 0.5006041079339508,
+    "profitFactor": 0.894327607875995,
+    "netPnL": -94590,
+    "maxDrawdown": 1.24165,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1870,
+    "winRate": 0.5064171122994653,
+    "profitFactor": 0.9222557965594614,
+    "netPnL": -64965,
+    "maxDrawdown": 0.9454,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 691,
+    "winRate": 0.4182344428364689,
+    "profitFactor": 0.955762540849058,
+    "netPnL": -14687.5,
+    "maxDrawdown": 0.535075,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 10
+    },
+    "totalTrades": 539,
+    "winRate": 0.42857142857142855,
+    "profitFactor": 0.9793791432942376,
+    "netPnL": -6470,
+    "maxDrawdown": 0.4627451943141924,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1236,
+    "winRate": 0.4045307443365696,
+    "profitFactor": 0.9450466683827665,
+    "netPnL": -28820,
+    "maxDrawdown": 0.7716,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 900,
+    "winRate": 0.4111111111111111,
+    "profitFactor": 0.9763540304225584,
+    "netPnL": -11480,
+    "maxDrawdown": 0.5982,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1271,
+    "winRate": 0.41935483870967744,
+    "profitFactor": 0.9451844457121126,
+    "netPnL": -28827.5,
+    "maxDrawdown": 0.5392430278884462,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "LONG",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 985,
+    "winRate": 0.4243654822335025,
+    "profitFactor": 0.9665927658152884,
+    "netPnL": -16500,
+    "maxDrawdown": 0.41839028776978415,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2443,
+    "winRate": 0.4150634465820712,
+    "profitFactor": 0.9579112947091425,
+    "netPnL": -42945,
+    "maxDrawdown": 1.102075,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 1.5,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 1846,
+    "winRate": 0.42036836403033584,
+    "profitFactor": 0.9836400281326433,
+    "netPnL": -15585,
+    "maxDrawdown": 0.832275,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": true,
+      "minRangePoints": 0
+    },
+    "totalTrades": 686,
+    "winRate": 0.36005830903790087,
+    "profitFactor": 0.985818692902319,
+    "netPnL": -5045,
+    "maxDrawdown": 0.6277,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1230,
+    "winRate": 0.34146341463414637,
+    "profitFactor": 0.918265764396223,
+    "netPnL": -47045,
+    "maxDrawdown": 1.0698,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 893,
+    "winRate": 0.3449048152295633,
+    "profitFactor": 0.9425095442223452,
+    "netPnL": -30645,
+    "maxDrawdown": 0.9058,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 2,
+      "direction": "BOTH",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 2397,
+    "winRate": 0.3600333750521485,
+    "profitFactor": 0.9927283975696689,
+    "netPnL": -7875,
+    "maxDrawdown": 1.1183423099940155,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 3,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1213,
+    "winRate": 0.2893652102225886,
+    "profitFactor": 0.9813948065359694,
+    "netPnL": -11170,
+    "maxDrawdown": 0.6568,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 4,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1193,
+    "winRate": 0.26487845766974016,
+    "profitFactor": 0.9981687247890322,
+    "netPnL": -1110,
+    "maxDrawdown": 0.84105,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 1177,
+    "winRate": 0.2582837723024639,
+    "profitFactor": 0.9837252551969252,
+    "netPnL": -9845,
+    "maxDrawdown": 0.80925,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 9,
+      "entryExampleTimeM": 45,
+      "profitRatio": 5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 858,
+    "winRate": 0.26456876456876455,
+    "profitFactor": 0.9989476969723994,
+    "netPnL": -590,
+    "maxDrawdown": 0.719073826168873,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 667,
+    "winRate": 0.4767616191904048,
+    "profitFactor": 0.9392942627645047,
+    "netPnL": -20670,
+    "maxDrawdown": 0.7056647167641618,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 605,
+    "winRate": 0.47768595041322315,
+    "profitFactor": 0.948130078867422,
+    "netPnL": -17330,
+    "maxDrawdown": 0.6734907352062164,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 662,
+    "winRate": 0.40634441087613293,
+    "profitFactor": 0.9474545879784829,
+    "netPnL": -20220,
+    "maxDrawdown": 0.6552229901059017,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 1.5,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 601,
+    "winRate": 0.40099833610648916,
+    "profitFactor": 0.9508486002062019,
+    "netPnL": -18592.5,
+    "maxDrawdown": 0.641047192900052,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 0
+    },
+    "totalTrades": 658,
+    "winRate": 0.3404255319148936,
+    "profitFactor": 0.9337571094011375,
+    "netPnL": -26730,
+    "maxDrawdown": 0.7179666433636273,
+    "score": 0
+  },
+  {
+    "config": {
+      "entryExampleTimeH": 10,
+      "entryExampleTimeM": 0,
+      "profitRatio": 2,
+      "direction": "SHORT",
+      "useVwapFilter": false,
+      "minRangePoints": 10
+    },
+    "totalTrades": 598,
+    "winRate": 0.34448160535117056,
+    "profitFactor": 0.941632322823696,
+    "netPnL": -23085,
+    "maxDrawdown": 0.6827521018854783,
+    "score": 0
+  }
+]

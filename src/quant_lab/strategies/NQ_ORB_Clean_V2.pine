@@ -1,0 +1,76 @@
+//@version=5
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+strategy("NQ 9:30 ORB [Clean Slate V2]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, pyramiding=0, currency=currency.USD, commission_type=strategy.commission.cash_per_contract, commission_value=2.5, slippage=2)
+
+// --- Parameters ---
+// Standard R:R of 2.0 to start safe. User can adjust.
+profitRatio = input.float(2.0, "Profit Ratio (Reward/Risk)", step=0.1)
+
+// --- Time Logic (New York) ---
+// We use explicit checks for clarity.
+nyHour = hour(time, "America/New_York")
+nyMinute = minute(time, "America/New_York")
+
+// 1. Range Definition Interval: 09:30 - 09:35
+// We record the range at the CLOSE of the 09:30 bar (which is 09:35:00 timestamp in some feeds or just 09:30 bar index).
+// In Pine, 'time' is the OPEN of the bar.
+// Bar 09:30 (Open) -> Closes at 09:35.
+// Bar 09:35 (Open) -> Closes at 09:40.
+// Bar 09:40 (Open) -> Closes at 09:45.
+
+isRangeBar = (nyHour == 9 and nyMinute == 30) // The bar that DEFINES the range
+isEntryBar = (nyHour == 9 and nyMinute == 35) // The bar where we ENTER
+isExitBar  = (nyHour == 9 and nyMinute == 40) // The bar where we MUST EXIT by Close (09:45)
+
+// --- State Variables ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool rangeDefined = false
+
+// Reset at start of day
+if dayofmonth(time("1D", "America/New_York")) != dayofmonth(time("1D", "America/New_York")[1])
+    rangeDefined := false
+    rangeHigh := na
+    rangeLow := na
+
+// --- Risk Management ---
+strategy.risk.max_position_size(1)
+
+// --- Logic ---
+
+// 1. Define Range (On Close of 09:30 Bar)
+if isRangeBar
+    rangeHigh := high
+    rangeLow := low
+    rangeDefined := true
+
+// 2. Entry Logic (Only valid during 09:35 Bar)
+// Explicitly check we have NO position before placing orders
+if isEntryBar and rangeDefined and strategy.position_size == 0
+    // Calculate R:R
+    risk = rangeHigh - rangeLow
+    
+    // Sanity check: prevent tiny range trades
+    if risk > 1
+        // Long Setup
+        targetL = rangeHigh + (risk * profitRatio)
+        strategy.entry("Long", strategy.long, qty=1, stop=rangeHigh, oca_name="ORB", oca_type=strategy.oca.cancel)
+        strategy.exit("Exit Long", "Long", stop=rangeLow, limit=targetL, comment_loss="Stop", comment_profit="Target")
+
+        // Short Setup
+        targetS = rangeLow - (risk * profitRatio)
+        strategy.entry("Short", strategy.short, qty=1, stop=rangeLow, oca_name="ORB", oca_type=strategy.oca.cancel)
+        strategy.exit("Exit Short", "Short", stop=rangeHigh, limit=targetS, comment_loss="Stop", comment_profit="Target")
+
+// 3. Hard Time Exit (Close of 09:40 Bar / Start of 09:45)
+if isExitBar
+    // Force close everything
+    strategy.close_all(comment="Time Exit 9:45")
+    // Cancel any pending orders that didn't trigger
+    strategy.cancel_all()
+
+// --- Visuals ---
+plot(isEntryBar ? rangeHigh : na, "Buy Stop", color=color.green, style=plot.style_linebr)
+plot(isEntryBar ? rangeLow : na, "Sell Stop", color=color.red, style=plot.style_linebr)

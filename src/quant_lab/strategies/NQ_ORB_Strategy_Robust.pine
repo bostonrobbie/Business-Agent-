@@ -1,0 +1,70 @@
+//@version=5
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+strategy("NQ 9:30 Short ORB [Robust Fix]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, commission_type=strategy.commission.cash_per_contract, commission_value=2.5, slippage=2)
+
+// --- Parameters ---
+profitRatio = input.float(3.5, "Profit Ratio (Reward/Risk)", step=0.1)
+useVwapFilter = input.bool(true, "Use Weekly VWAP Filter")
+
+// --- Timezone & Helper Functions ---
+// Use Exchange Time (America/New_York) by default for NQ
+// We will look at the explicit bar times.
+nyHour = hour(time, "America/New_York")
+nyMinute = minute(time, "America/New_York")
+
+// --- Global Indicators ---
+vwapW = request.security(syminfo.tickerid, "W", ta.vwap)
+plot(useVwapFilter ? vwapW : na, "Weekly VWAP", color=color.blue)
+
+// --- Strategy State ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool rangeDefined = false
+
+// Reset daily
+if dayofmonth(time("1D", "America/New_York")) != dayofmonth(time("1D", "America/New_York")[1])
+    rangeDefined := false
+    rangeHigh := na
+    rangeLow := na
+
+// --- Logic on Bar Close ---
+
+// 1. At 9:30 Bar Close (New York: 09:35:00) -> Define Range
+if nyHour == 9 and nyMinute == 30
+    rangeHigh := high
+    rangeLow := low
+    rangeDefined := true
+    
+    // Check Filter
+    bool trendOk = not useVwapFilter or (close < vwapW)
+    
+    if trendOk
+        // Calculate limit/stop levels
+        stopPrice = rangeHigh
+        entryPrice = rangeLow
+        risk = stopPrice - entryPrice
+        target = entryPrice - (risk * profitRatio)
+        
+        if risk > 0.25
+            // Submit Entry: Valid for indefinite time logic unless cancelled
+            strategy.entry("Short ORB", strategy.short, stop=entryPrice, comment="Breakout")
+            strategy.exit("Exit ORB", "Short ORB", stop=stopPrice, limit=target, comment_loss="Stop", comment_profit="Target")
+
+// 2. TIMEOUT / HARD EXIT / FAILSAFE
+// Ideally 9:40 Close (09:45:00).
+// If we are past 09:40:00 (e.g. 09:45, 09:50...), we MUST CANCEL and CLOSE.
+
+// If it's 9:40 (closing at 9:45) OR any time after that in the AM session
+if (nyHour == 9 and nyMinute >= 40) or (nyHour > 9)
+    // Cancel any pending entry orders that didn't fill
+    strategy.cancel("Short ORB")
+    
+    // Close any open positions immediately
+    if strategy.position_size != 0
+        strategy.close_all(comment="Time Exit Hard")
+
+// --- Visuals ---
+plot(rangeDefined and nyHour==9 and nyMinute < 45 ? rangeHigh : na, "Range High", color=color.red, style=plot.style_linebr)
+plot(rangeDefined and nyHour==9 and nyMinute < 45 ? rangeLow : na, "Range Low", color=color.green, style=plot.style_linebr)

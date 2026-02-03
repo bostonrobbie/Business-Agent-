@@ -1,0 +1,82 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © AI_Quant_Lab
+
+//@version=5
+strategy("NQ 9:30 Short ORB [NY Time Fixed]", overlay=true, initial_capital=100000, default_qty_type=strategy.fixed, default_qty_value=1, commission_type=strategy.commission.cash_per_contract, commission_value=2.5)
+
+// --- Parameters ---
+profitRatio = input.float(3.5, "Profit Ratio (Reward/Risk)", step=0.1)
+useVwapFilter = input.bool(true, "Use Weekly VWAP Filter")
+
+// --- State Variables ---
+var float rangeHigh = na
+var float rangeLow = na
+var bool tradeTaken = false
+
+// --- Timezone Management (CRITICAL) ---
+// We explicitly check for NY Time (America/New_York)
+// The function 'time' returns the timestamp if the bar falls within the specified string
+// "0930-0935" means 9:30 AM to 9:35 AM NY Time.
+
+// Function to check if current bar is the 9:30 NY bar
+isRangeBar() =>
+    not na(time(timeframe.period, "0930-0935:1234567", "America/New_York"))
+
+// Function to check if we are in the trading window (09:35 - 09:45 NY)
+inTradeWindow() =>
+    not na(time(timeframe.period, "0935-0945:1234567", "America/New_York"))
+
+// Function to check if we are past 09:45 NY (Hard Exit)
+isPastExit() =>
+    // Logic: If current time > 09:45 NY and we are in the same session
+    // Simplified: Check if we are in the "Exit Zone" (09:45 - 16:00)
+    not na(time(timeframe.period, "0945-1600:1234567", "America/New_York"))
+
+// --- Logic ---
+
+// 1. Define Range
+// Reset daily logic handled by session breaks usually, but explicit reset good practice
+if dayofmonth(time("1D", "America/New_York")) != dayofmonth(time("1D", "America/New_York")[1])
+    tradeTaken := false
+    rangeHigh := na
+    rangeLow := na
+
+// Capture Range at 9:30
+if isRangeBar()
+    rangeHigh := high
+    rangeLow := low
+
+// 2. Trend Filter (Weekly VWAP)
+vwapW = request.security(syminfo.tickerid, "W", ta.vwap)
+plot(useVwapFilter ? vwapW : na, "Weekly VWAP", color=color.blue)
+
+// 3. Entry Logic
+// Must be in window, valid range, not traded, and price < VWAP
+validTrend = not useVwapFilter or (close < vwapW)
+canTrade = inTradeWindow() and not tradeTaken and not na(rangeLow) and validTrend
+
+if (canTrade)
+    // Calc Risk
+    stopPrice = rangeHigh
+    entryPrice = rangeLow
+    risk = stopPrice - entryPrice
+    limitTarget = entryPrice - (risk * profitRatio)
+    
+    // Stop Entry: Sell if price hits rangeLow
+    if (risk > 0.25) // Min tick filter
+        strategy.entry("Short ORB", strategy.short, stop=entryPrice, comment="Breakout")
+        strategy.exit("Exit", "Short ORB", stop=stopPrice, limit=limitTarget, comment_loss="Stop", comment_profit="Target")
+
+// Mark trade as taken
+if strategy.position_size != 0
+    tradeTaken := true
+
+// 4. Hard Time Exit
+// If we are in the "Past Exit" zone (09:45+), CLOSE EVERYTHING.
+if isPastExit()
+    strategy.close_all(comment="Time Exit 9:45")
+
+// --- Debug Visuals ---
+// Plot lines only for today
+// plot(rangeHigh, title="Range High", color=color.red, style=plot.style_circles)
+// plot(rangeLow, title="Range Low", color=color.green, style=plot.style_circles)
